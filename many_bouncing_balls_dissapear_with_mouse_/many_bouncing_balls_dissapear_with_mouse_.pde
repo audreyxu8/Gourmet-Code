@@ -42,8 +42,8 @@ void draw (){
     xPos [i] = xPos [i] + xSpeed[i];
     yPos [i] = yPos [i] + ySpeed [i];
     
- fill (c [i], opacity [i]);
- stroke(0,255,0);
+ fill (c[i], opacity[i]);
+ stroke(0,255,0); 
     ellipse (xPos [i], yPos [i], circleSize [i], circleSize[i]);
   
     //setting the boundaries fr balls

@@ -8,7 +8,7 @@ void setup(){
   println (myIntegerArray[4]);
   println (myStringArray [1]);
   
-  for (int i=0; i<3; i++){
+  for (int i=0; i<3; i++){ 
     println (myStringArray [i]);
   }
   
