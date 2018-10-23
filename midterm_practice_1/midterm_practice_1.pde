@@ -15,6 +15,7 @@ int x = mouseX, mouseY;
   fill (255);
   translate (width/2, height/2);
   rotate(radians(x)); 
-  rect(0, 0, 100, 100); 
+  // make sure its at the origin
+  rect(0, 0, 300, 300); 
   popMatrix(); 
 }

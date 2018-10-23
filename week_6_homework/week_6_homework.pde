@@ -3,11 +3,11 @@
 //Create an array to store the position of multiple shapes (5+)
 //Assign values to your position array using a for loop
 
-//ARRAYINDEXOUTOFBOUNDS :(
 
-int num = 80;
 
-int[] xPos = {10, 100, 140, 250, 600};
+int num = 5;
+
+int[] xPos = {10, 100, 140, 250, 700};
 int[] yPos = {80, 250, 400, 550, 750};
 
 int[] size = new int [num];
@@ -23,15 +23,10 @@ String myStringArray [] = {"lol", "haha", ":)"};
 void setup (){
   size (800,800);
   
-  for (int i=0; i<width; i++){
-    
-  //xPos[i] = int (random (size [i]/2, width - size [i]/2));
-  //yPos[i] = int (random (size [i]/2, height - size [i]/2));
-  
-  
-  //c[i] = color (random (255), random (255), random (255)); 
-  
-  //opacity[i] = int (random (255));
+  for (int i=0; i<num; i++){
+   c[i] = color (random (255), random (255), random (255)); 
+   opacity[i] = int (random (255));
+   size [i] = int (random (50,100));
   
   }
   
@@ -52,10 +47,17 @@ void setup (){
 
 void draw (){
 
-  for (int i=0; i<num; i++){
-    fill (c[i], opacity [i]);
-   ellipse (xPos[i], yPos[i], size[i], size[i]); 
-  rect (xPos [i], yPos [i], size [i], size [i]);
+  //for (int i=0; i<num; i++){
+  //  fill (c[i], opacity [i]);
+  //  ellipse (xPos[i], yPos[i], size[i], size[i]); 
+  //  rect (xPos [i], yPos [i], size [i], size [i]);
+  //  }
+    
+    for (int i=0; i<5; i++){
+       fill (c[i], opacity [i]);
+       ellipse (xPos[i], yPos[i], size[i], size[i]); 
+       rect (xPos [i], yPos [i], size [i], size [i]);
+       
     }
     
 }

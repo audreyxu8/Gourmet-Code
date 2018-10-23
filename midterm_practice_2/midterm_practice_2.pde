@@ -15,7 +15,7 @@ void draw() {
     for (int j = 0; j <= height; j += height/35) {
       fill(0); 
       float d = dist(mouseX, mouseY, i, j); 
-      if (d <= width/35) {
+      if (d < (width/35/2) && mousePressed) {
         fill (255);
       }
       ellipse(i, j, width/35, height/35);
