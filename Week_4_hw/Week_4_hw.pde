@@ -51,6 +51,7 @@ void draw(){
   sum_global = addNumbers(n1, n2,n3);
   
   additionSentence = str(n1) + " + " + str(n2) + " = " + str(sum_global); 
+  stroke (0,255,0);
   text(additionSentence, width/2, height/2); 
 
 
